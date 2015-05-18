@@ -1,7 +1,7 @@
 module.exports = function( grunt ) {
 	grunt.initConfig({
-	// Tasks que o Grunt deve executarrrrrr
-		/*uglify : {
+	// Tasks que o Grunt deve executar
+		uglify : {
 			options : {
 				mangle : false,
                 compress: false,
@@ -15,7 +15,7 @@ module.exports = function( grunt ) {
                     'assets/js/elux-js-rules.js' : [ 'assets/_js/elux-js-plugins.js', 'assets/_js/elux-js-rules.js', 'assets/_js/elux-js-plugins.js' ]
 				}
 			}
-		}, // uglify*/
+		}, // uglify
 
 		less: {
 			development: {
