@@ -1,6 +1,6 @@
 module.exports = function( grunt ) {
 	grunt.initConfig({
-	// Tasks que o Grunt deve executar
+	// Tasks que o Grunt deve executarrrrrr
 		/*uglify : {
 			options : {
 				mangle : false,
