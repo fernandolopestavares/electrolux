@@ -1,0 +1,112 @@
+/*VARIAVEIS*/
+@all-min: ~"0px";
+@xs-phone-min: ~"300px";
+@xs-min: ~"480px";
+@sm-min: ~"768px";
+@md-min: ~"992px";
+@lg-min: ~"1200px";
+
+@all: ~"only screen and (min-width: @{all-min})";
+@phone-min: ~"only screen and (min-width: @{xs-phone-min})";
+@phone: ~"only screen and (min-width: @{xs-min})";
+@tablet: ~"only screen and (min-width: @{sm-min})";
+@desktop: ~"only screen and (min-width: @{md-min})";
+@large: ~"only screen and (min-width: @{lg-min})";
+
+@bg-menus: ~"#041e50";
+@bg-gray: ~"#e5e8ed";
+@bg-thumbs: ~"#d1d3d3";
+@bg-thumbs-active: ~"#2acbd3";
+
+@font-productname-m: ~"12px";
+@font-price-de-m: ~"10px"; 
+@font-price-por-m: ~"16px";
+@font-price-parcela-m: ~"14px";
+@font-btn-compra-m: ~"12px";
+
+@font-productname-t: ~"14px";
+@font-price-de-t: ~"12px"; 
+@font-price-por-t: ~"18px";
+@font-price-parcela-t: ~"14px";
+@font-btn-compra-t: ~"14px";
+
+@font-productname-d: ~"16px";
+@font-price-de-d: ~"12px"; 
+@font-price-por-d: ~"20px";
+@font-price-parcela-d: ~"16px";
+@font-btn-compra-d: ~"14px";
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius:    @radius;
+    border-radius:         @radius;
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
+}
+
+.animate {
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+/*------------------------
+INSTITUCIONAL
+--------------------------*/
+@media @all {
+	body.institucional {
+    	.bread-crumb {    		
+    		padding: 15px 0;
+    		display: table;
+    		ul {
+    			li {
+    				display: table;
+    				float: left;    				
+    				a {
+    					color: #646569;
+    					font-weight: bold;
+    					font-family: "Electrolux_Sans_Regular";
+    					font-size: 12px;
+    					display: block;
+    					float: left;
+    				}
+    			}
+
+    			li:before {
+    				font-size: 11px;
+    				margin: 2px 5px 0 5px;
+    				float: left;
+    			}
+
+    			li.fa-home:before {
+    				font-size: 18px;    				
+    				margin: -2px 0 0 0;
+    			}
+    		}
+    	}
+    	h1{
+    		color: #031e50;
+    		text-align: center;
+    		font-size: 60px;
+    		font-weight: bold;
+    		p{
+    			color: #031e50;
+    		}
+    	}
+    	.institucional{
+    		background-color: #646569;
+    		.rightContent{
+    			float: right;
+    			color: #FFF;
+    			font-size: 13px;
+    			p{
+    				margin-bottom: 20px;
+    				line-height: 18px;
+    			}
+    		}
+    	}
+	}
+}
