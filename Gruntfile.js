@@ -78,7 +78,7 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( 'grunt-contrib-concat' );
 
 
-	// Tarefas que serão executadas
+	// Tarefas que serão executadas dasdasdas
 	grunt.registerTask( 'default', [ /*'uglify',*/ 'less', 'concat' ] );
 
 	// Tarefa para Watch
